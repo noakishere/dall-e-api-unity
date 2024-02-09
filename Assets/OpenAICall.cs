@@ -1,6 +1,4 @@
 using System;
-using System.IO;
-using System.Xml.Linq;
 using Newtonsoft.Json.Linq;
 using UnityEngine;
 using UnityEngine.Networking;
@@ -44,10 +42,6 @@ public static class OpenAICall
         string content = "";
 
         Debug.Log(response);
-
-        // TESTING THE JSON PARSER, to prevent calling the API everytime
-        // temp JSON response from OpenAI
-        //response = "{\r\n  \"created\": 1707436565,\r\n  \"data\": [\r\n    {\r\n      \"url\": \"https://oaidalleapiprodscus.blob.core.windows.net/private/org-Exuadf5crvsNRPSQs39IHLgG/user-83k90ALqTProIo6fYmLfucHN/img-FGU68QEP1wClFvFcuW35BMrx.png?st=2024-02-08T22%3A56%3A05Z&se=2024-02-09T00%3A56%3A05Z&sp=r&sv=2021-08-06&sr=b&rscd=inline&rsct=image/png&skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2024-02-08T23%3A11%3A52Z&ske=2024-02-09T23%3A11%3A52Z&sks=b&skv=2021-08-06&sig=u1PTiT%2BoV20kcHBLokiFuy6SufijpRlQsiMkUw11YVs%3D\"\r\n    }\r\n  ]\r\n}";
 
         try
         {
